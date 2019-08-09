@@ -1,0 +1,20 @@
+<div class="profile-card car-2-v">
+    <div class="profile-card-head">
+        <div class="profile-card-head-title">Assets with warranty expired</div>
+        <!-- <div class="card-head-bt fa fa-cog"></div> -->
+        <div class="clear"></div>
+    </div>
+    <div class="card-body">
+        <div class="dashboard-only-text dashboard-only-text-red" [class.gray]="expired <= 0">{{expired}}</div>
+    </div>
+</div>
+<div class="profile-card car-2-v">
+    <div class="profile-card-head">
+        <div class="profile-card-head-title">Tracked assets</div>
+        <!-- <div class="card-head-bt fa fa-cog"></div> -->
+        <div class="clear"></div>
+    </div>
+    <div class="card-body">
+        <div class="dashboard-only-text" [class.gray]="tracked <= 0">{{tracked}}</div>
+    </div>
+</div>

@@ -1,0 +1,20 @@
+<div class="profile-card">
+  <div class="profile-card-head">
+    <div class="profile-card-head-title">Agent report</div>
+    <!-- <div class="card-head-bt fa fa-cog"></div> -->
+    <div class="clear"></div>
+  </div>
+  <div class="card-body dashboard">
+
+      <div class="loader-container" *ngIf="!dataReady">
+          <img [src]="staticUrl + '/assets/img/ig_loader.svg'">
+      </div>
+
+    <div [chart]="chart" *ngIf="hasData && dataReady" style="max-height: 300px;"></div>
+
+    <div class="right-bar-empty" *ngIf="!hasData && dataReady">
+        <div class="right-bar-empty-icon icon-bar-chart"></div>
+        <div class="right-bar-empty-text">Oops! There are no insights to show you</div>
+    </div>
+  </div>
+</div>
